@@ -1,0 +1,23 @@
+Blog\BlogBundle\Entity\Contact:
+    type: entity
+    table: null
+    repositoryClass: Blog\BlogBundle\Repository\ContactRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        subject:
+            type: string
+            length: 255
+        body:
+            type: text
+    lifecycleCallbacks: {  }
